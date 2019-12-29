@@ -13,7 +13,7 @@ using System.Runtime.CompilerServices;
 
 namespace DDProblem
 {
-    
+
     class Program
     {
         
@@ -107,9 +107,10 @@ namespace DDProblem
             var philosophers = new Task[philosophersAmount];
             for (int i = 0; i < philosophersAmount; i++)
             {
-                int icopy = i;
-                philosophers[i] = Task.Run(() => Run(icopy));
+                philosophers[i] = new Task(() => { Thread.Sleep(1000); Console.WriteLine("Completed"); });
+                philosophers[i].Start();
             }
+            
             
         }
         public static void Main(string[] args)
