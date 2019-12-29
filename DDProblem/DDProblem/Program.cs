@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.Linq;
@@ -39,18 +40,21 @@ namespace DDProblem
 
         private static void Think(int philosopherInx)
         {
+            Console.WriteLine("From Thinking" + philosopherInx);
             Thread.Sleep(5000);
             thoughts[philosopherInx]++;
         }
 
-        public async Task Run(int i)
+        async Task Run(int i)
         {
+            Console.WriteLine("From Run " + i);
             while (true)
             {
                 watch.Restart();
                 await TakeForks(i);
                 _waitTime[i] += watch.ElapsedMilliseconds;
-
+                
+                Console.WriteLine("internal");
                 eatenFood[i] = (eatenFood[i] + 1) % (int.MaxValue - 1);
 
                 watch.Restart();
@@ -59,6 +63,7 @@ namespace DDProblem
 
                 Think(i);
             }
+            
         }
 
         async Task TakeForks(int i)
@@ -92,29 +97,33 @@ namespace DDProblem
         
         private static DateTime startTime;
 
-        public static void Main(string[] args)
+
+        public Program()
         {
             _philosopherSemaphores = new SemaphoreSlim[PhilosophersAmount];
             for (int i = 0; i < PhilosophersAmount; i++)
                 _philosopherSemaphores[i] = new SemaphoreSlim(1);
-            // Observer:
-            Console.WriteLine("Starting...");
             startTime = DateTime.Now;
             var philosophers = new Task[philosophersAmount];
             for (int i = 0; i < philosophersAmount; i++)
             {
                 int icopy = i;
-                philosophers[i] = new Task(() => Run(icopy));
+                philosophers[i] = Task.Run(() => Run(icopy));
             }
-
+            
+        }
+        public static void Main(string[] args)
+        {
+            
+            // Observer:
+            Console.WriteLine("Starting...");
+            Program prog = new Program();
             Console.WriteLine("Press any key to exit...");
             Console.ReadLine();
-
             for (int i = 0; i < philosophersAmount; i++)
             {
                 Console.WriteLine($"P{i+1} {eatenFood[i]} eaten, {thoughts[i]} thoughts.");
             }
-
             Console.WriteLine("Exit");
         }
     }
