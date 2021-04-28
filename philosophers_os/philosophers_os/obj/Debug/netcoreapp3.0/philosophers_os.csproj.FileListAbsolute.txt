@@ -1,0 +1,11 @@
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/bin/Debug/netcoreapp3.0/philosophers_os
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/bin/Debug/netcoreapp3.0/philosophers_os.deps.json
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/bin/Debug/netcoreapp3.0/philosophers_os.runtimeconfig.json
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/bin/Debug/netcoreapp3.0/philosophers_os.runtimeconfig.dev.json
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/bin/Debug/netcoreapp3.0/philosophers_os.dll
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/bin/Debug/netcoreapp3.0/philosophers_os.pdb
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/obj/Debug/netcoreapp3.0/philosophers_os.csprojAssemblyReference.cache
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/obj/Debug/netcoreapp3.0/philosophers_os.AssemblyInfoInputs.cache
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/obj/Debug/netcoreapp3.0/philosophers_os.AssemblyInfo.cs
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/obj/Debug/netcoreapp3.0/philosophers_os.dll
+/home/xakep/Документы/OS/philosophers_os/philosophers_os/obj/Debug/netcoreapp3.0/philosophers_os.pdb

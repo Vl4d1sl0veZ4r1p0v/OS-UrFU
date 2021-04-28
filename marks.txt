@@ -1,0 +1,6 @@
+namd cmd
+garde 20
+name bash
+grade 20
+name C#
+grade 10

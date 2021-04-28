@@ -1,0 +1,1 @@
+ sadfasf   dfdf d/^\s*$/

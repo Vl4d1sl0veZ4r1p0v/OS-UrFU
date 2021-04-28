@@ -1,0 +1,11 @@
+/home/xakep/Документы/OS/DDProblem/DDProblem/bin/Debug/netcoreapp3.0/DDProblem
+/home/xakep/Документы/OS/DDProblem/DDProblem/bin/Debug/netcoreapp3.0/DDProblem.deps.json
+/home/xakep/Документы/OS/DDProblem/DDProblem/bin/Debug/netcoreapp3.0/DDProblem.runtimeconfig.json
+/home/xakep/Документы/OS/DDProblem/DDProblem/bin/Debug/netcoreapp3.0/DDProblem.runtimeconfig.dev.json
+/home/xakep/Документы/OS/DDProblem/DDProblem/bin/Debug/netcoreapp3.0/DDProblem.dll
+/home/xakep/Документы/OS/DDProblem/DDProblem/bin/Debug/netcoreapp3.0/DDProblem.pdb
+/home/xakep/Документы/OS/DDProblem/DDProblem/obj/Debug/netcoreapp3.0/DDProblem.csprojAssemblyReference.cache
+/home/xakep/Документы/OS/DDProblem/DDProblem/obj/Debug/netcoreapp3.0/DDProblem.AssemblyInfoInputs.cache
+/home/xakep/Документы/OS/DDProblem/DDProblem/obj/Debug/netcoreapp3.0/DDProblem.AssemblyInfo.cs
+/home/xakep/Документы/OS/DDProblem/DDProblem/obj/Debug/netcoreapp3.0/DDProblem.dll
+/home/xakep/Документы/OS/DDProblem/DDProblem/obj/Debug/netcoreapp3.0/DDProblem.pdb
